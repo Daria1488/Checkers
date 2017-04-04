@@ -1,53 +1,111 @@
-<?php
+<html>
+<head>
+    <title>Шахматная доска</title>
 
-/* @var $this yii\web\View */
+    <style>
+        .white{
+            background:white;
+            width:100px;
+            height:100px;
+            float:left;
+        }
+        .black{
+            background:#78a2b7;
+            width:100px;
+            height:100px;
+            float:left;
+        }
+        .border{
+            width: 810px;
+            height: 810px;
+            margin: auto;
+            border: solid 5px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
 
-$this->title = 'My Yii Application';
-?>
-<div class="site-index">
+    </style>
+</head>
+<body>
+<div class="border">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/white.png"></div>
+    <div class="white"></div>
 
-    <div class="body-content">
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
+    <div class="white"></div>
+    <div class="black"><img src="/black.png"></div>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
 </div>
+
+</html>
