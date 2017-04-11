@@ -26,6 +26,14 @@
             height: 80px;
             margin-top: 10px;
             margin-left: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 8px 8px 7px rgba(0,0,0,0.5);
+            transition: all 0.5s ease;
+        }
+        img:hover{
+
+            box-shadow: 4px 4px 9px rgba(0,0,0,0.75);
         }
 
     </style>
