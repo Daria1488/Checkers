@@ -1,86 +1,104 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <title>Шахматная доска</title>
-    <script type="text/javascript" src="jquery.js"></script>
+    <title>Test JavaScript</title>
 </head>
+
 <body>
 
-<div class="border">
+<table class="board">
+    <tr p="1">
+        <td class="td1"  p="1"></td>
+        <td  class="td2" align="center" p="2"><div class="pawn2"></div></td>
+        <td class="td1"  p="3"></td>
+        <td  class="td2" align="center" p="4"><div class="pawn2"></div></td>
+        <td class="td1"  p="5"></td>
+        <td  class="td2" align="center" p="6"><div class="pawn2"></div></td>
+        <td class="td1"  p="7"></td>
+        <td  class="td2" align="center" p="8"><div class="pawn2"></div></td>
+    </tr>
 
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
+    <tr p="2">
+        <td  class="td2" align="center" p="1"><div class="pawn2"></div></td>
+        <td class="td1"  p="2"></td>
+        <td  class="td2" align="center" p="3"><div class="pawn2"></div></td>
+        <td class="td1"  p="4"></td>
+        <td  class="td2" align="center" p="5"><div class="pawn2"></div></td>
+        <td class="td1"  p="6"></td>
+        <td  class="td2" align="center" p="7"><div class="pawn2"></div></td>
+        <td class="td1"  p="8"></td>
+    </tr>
 
-    <div class="white"></div>    
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
+    <tr p="3">
+        <td class="td1"  p="1"></td>
+        <td  class="td2" align="center" p="2"><div class="pawn2"></div></td>
+        <td class="td1"  p="3"></td>
+        <td  class="td2" align="center" p="4"><div class="pawn2"></div></td>
+        <td class="td1"  p="5"></td>
+        <td  class="td2" align="center" p="6"><div class="pawn2"></div></td>
+        <td class="td1"  p="7"></td>
+        <td  class="td2" align="center" p="8"><div class="pawn2"></div></td>
+    </tr>
 
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
-    <div class="black pawn2"><img src="/white.png"></div>
-    <div class="white"></div>
+    <tr p="4">
+        <td  class="td2" align="center" p="1"></td>
+        <td class="td1"  p="2"></td>
+        <td  class="td2" align="center" p="3"></td>
+        <td class="td1"  p="4"></td>
+        <td  class="td2" align="center" p="5"></td>
+        <td class="td1"  p="6"></td>
+        <td  class="td2" align="center" p="7"></td>
+        <td class="td1"  p="8"></td>
+    </tr>
 
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
+    <tr p="5">
+        <td class="td1"  p="1"></td>
+        <td  class="td2" align="center" p="2"></td>
+        <td class="td1"  p="3"></td>
+        <td  class="td2" align="center" p="4"></td>
+        <td class="td1"  p="5"></td>
+        <td  class="td2" align="center" p="6"></td>
+        <td class="td1"  p="7"></td>
+        <td  class="td2" align="center" p="8"></td>
+    </tr>
 
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
+    <tr p="6">
+        <td  class="td2" align="center" p="1"><div class="pawn1"></div></td>
+        <td class="td1"  p="2"></td>
+        <td  class="td2" align="center" p="3"><div class="pawn1"></div></td>
+        <td class="td1"  p="4"></td>
+        <td  class="td2" align="center" p="5"><div class="pawn1"></div></td>
+        <td class="td1"  p="6"></td>
+        <td  class="td2" align="center" p="7"><div class="pawn1"></div></td>
+        <td class="td1"  p="8"></td>
+    </tr>
 
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
+    <tr p="7">
+        <td class="td1"  p="1"></td>
+        <td  class="td2" align="center" p="2"><div class="pawn1"></div></td>
+        <td class="td1"  p="3"></td>
+        <td  class="td2" align="center" p="4"><div class="pawn1"></div></td>
+        <td class="td1"  p="5"></td>
+        <td  class="td2" align="center" p="6"><div class="pawn1"></div></td>
+        <td class="td1"  p="7"></td>
+        <td  class="td2" align="center" p="8"><div class="pawn1"></div></td>
+    </tr>
 
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
+    <tr p="8">
+        <td  class="td2" align="center" p="1"><div class="pawn1"></div></td>
+        <td class="td1"  p="2"></td>
+        <td  class="td2" align="center" p="3"><div class="pawn1"></div></td>
+        <td class="td1"  p="4"></td>
+        <td  class="td2" align="center" p="5"><div class="pawn1"></div></td>
+        <td class="td1"  p="6"></td>
+        <td  class="td2" align="center" p="7"><div class="pawn1"></div></td>
+        <td class="td1"  p="8"></td>
+    </tr>
+</table>
 
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-    <div class="white"></div>
-    <div class="black pawn1"><img src="/black.png"></div>
-
-
-</div>
 <div class="indicator"><div>Игра не начата</div></div>
 
 <div class="message"><div>Ходить можно только вперёд по диагонали, бить можно как вперёд,
@@ -94,9 +112,6 @@
 
 <div class="win hide"><div></div></div>
 
-
-
-<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@ function defaultMessage()
   e.data('text', '');
 }
 
-// Таймер игры
+// РўР°Р№РјРµСЂ РёРіСЂС‹
 function timer()
 {
   var t = d.data('timer');
@@ -42,13 +42,13 @@ function timer()
   setTimeout('timer()', 1000);
 }
 
-// Узнаем чей ход
+// РЈР·РЅР°РµРј С‡РµР№ С…РѕРґ
 function player()
 {
   return d.data('player');
 }
 
-// Изменяем счет
+// РР·РјРµРЅСЏРµРј СЃС‡РµС‚
 function mPawn()
 {
   if(player() == 1)
@@ -56,10 +56,10 @@ function mPawn()
   else if(player() == 2)
     d.data('p1', ((d.data('p1') * 1) - 1));
 
-  $('div.score').text('Белые ' + d.data('p1') + ':' + d.data('p2') + ' Красные');
+  $('div.score').text('Р‘РµР»С‹Рµ ' + d.data('p1') + ':' + d.data('p2') + ' РљСЂР°СЃРЅС‹Рµ');
 }
 
-// Получаем массив клеток с возможными ходами
+// РџРѕР»СѓС‡Р°РµРј РјР°СЃСЃРёРІ РєР»РµС‚РѕРє СЃ РІРѕР·РјРѕР¶РЅС‹РјРё С…РѕРґР°РјРё
 function arrOfPossible(r, c, k)
 {
   r = r * 1;
@@ -408,7 +408,7 @@ function checkOnKick()
   return result;
 }
 
-// Отмечаем возможные ходы
+// РћС‚РјРµС‡Р°РµРј РІРѕР·РјРѕР¶РЅС‹Рµ С…РѕРґС‹
 function getPossible(r, c, k)
 {
   var p = arrOfPossible(r, c, k);
@@ -422,72 +422,72 @@ function getPossible(r, c, k)
   }
 }
 
-// Смена игрока
+// РЎРјРµРЅР° РёРіСЂРѕРєР°
 function changePlayer()
 {
   if(player() == 2)
   {
     d.data('player', '1');
-    $('div.indicator').text('Белые').animate({top: '372px'}, 500);
+    $('div.indicator').text('Р‘РµР»С‹Рµ').animate({top: '372px'}, 500);
   }
   else if(player() == 1)
   {
     d.data('player', '2');
-    $('div.indicator').text('Красные').animate({top: '80px'}, 500);
+    $('div.indicator').text('РљСЂР°СЃРЅС‹Рµ').animate({top: '80px'}, 500);
   }
 }
 
-// Старт игры
+// РЎС‚Р°СЂС‚ РёРіСЂС‹
 function start()
 {
   d.data('player', '1');
-  $('div.indicator > div').text('Белые').parent().animate({top: '372px'}, 500);
+  $('div.indicator > div').text('Р‘РµР»С‹Рµ').parent().animate({top: '372px'}, 500);
   $('div.timer').show();
   $('div.score').show();
   timer();
 }
 
-// Конец игры
+// РљРѕРЅРµС† РёРіСЂС‹
 function end()
 {
   var r;
-  r = 'Конец!<br/>';
+  r = 'РљРѕРЅРµС†!<br/>';
   if(d.data('p1') == 0)
-    r += 'Красные';
+    r += 'РљСЂР°СЃРЅС‹Рµ';
   else if(d.data('p2') == 0)
-    r += 'Белые';
-  r += ' выиграли';
+    r += 'Р‘РµР»С‹Рµ';
+  r += ' РІС‹РёРіСЂР°Р»Рё';
 
   $('div.win > div').html(r).parent().fadeIn(500);
   $('div.timer').hide();
   $('div.indicator').hide();
 }
 
-// Стартуем игру при нажатии кнопки "Начать"
+// РЎС‚Р°СЂС‚СѓРµРј РёРіСЂСѓ РїСЂРё РЅР°Р¶Р°С‚РёРё РєРЅРѕРїРєРё "РќР°С‡Р°С‚СЊ"
 $('input.start').click(function(){
   start();
   $(this).parent().fadeOut(500);
 });
 
-// Подсвечиваем клетки при наведении
-$('td > div.pawn1').live('hover', function(){
+// РџРѕРґСЃРІРµС‡РёРІР°РµРј РєР»РµС‚РєРё РїСЂРё РЅР°РІРµРґРµРЅРёРё
+$('td').on('hover', "div.pawn1", function(){
   if(player() == 1)
     $(this).parent().toggleClass('hover');
 });
-$('td > div.pawn2').live('hover', function(){
+$('td').on('hover', "div.pawn2", function(){
   if(player() == 2)
     $(this).parent().toggleClass('hover');
 });
 
-// При нажатии на поле без шашки, убираем все подсветки
+// РџСЂРё РЅР°Р¶Р°С‚РёРё РЅР° РїРѕР»Рµ Р±РµР· С€Р°С€РєРё, СѓР±РёСЂР°РµРј РІСЃРµ РїРѕРґСЃРІРµС‚РєРё
 $('td').click(function(){
   if($(this).hasClass('possible'))
     return true;
   $('td').removeClass('checked').removeClass('possible').removeClass('p2');
 });
 
-// Отмечаем шашку и показываем возможные ходы при нажатии на неё
-$('div.pawn1').live('click', function(){
+// РћС‚РјРµС‡Р°РµРј С€Р°С€РєСѓ Рё РїРѕРєР°Р·С‹РІР°РµРј РІРѕР·РјРѕР¶РЅС‹Рµ С…РѕРґС‹ РїСЂРё РЅР°Р¶Р°С‚РёРё РЅР° РЅРµС‘
+$('body').on('click', "div.pawn1", function(){
     if(player() == 2)
         return true;
 
@@ -502,7 +502,7 @@ $('div.pawn1').live('click', function(){
     else
         getPossible(r, c, false);
 });
-$('div.pawn2').live('click', function(){
+$('body').on('click', "div.pawn2", function(){
     if(player() == 1)
         return true;
 
@@ -518,8 +518,8 @@ $('div.pawn2').live('click', function(){
         getPossible(r, c, false);
 });
 
-// Делаем ход
-$('td.possible').live('click', function(){
+// Р”РµР»Р°РµРј С…РѕРґ
+$('body').on('click', "td.possible", function(){
   var e = $('td.checked');
 
   var re = (e.parent().attr('p')) * 1;
