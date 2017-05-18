@@ -96,15 +96,6 @@ a.desc:after {
     border: none;
 }
 
-@media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 15px;
-    }
-}
-
 .nav > li > form > button.logout:focus,
 .nav > li > form > button.logout:hover {
     text-decoration: none;
@@ -153,20 +144,12 @@ div.white{background: white;}
 div.black{background: #78a2b7;}
 
 .pawn1{
-    background: #fff;
+    background: url("/../white.png");
+    background-size: 100%;
     border-radius: 100px;
     height: 40px;
     width: 40px;
     position: relative;
-}
-.pawn1:before{
-    border: 2px solid #f33;
-    border-radius: 100px;
-    content: '';
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 3px; top: 3px;
 }
 .queen1:after{
     background: #f33;
@@ -179,20 +162,12 @@ div.black{background: #78a2b7;}
 }
 
 .pawn2{
-    background: #f33;
+    background: url("/../black.png");
+    background-size: 100%;
     border-radius: 100px;
     height: 40px;
     width: 40px;
     position: relative;
-}
-.pawn2:before{
-    border: 2px solid #fff;
-    border-radius: 100px;
-    content: '';
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 3px; top: 3px;
 }
 .queen2:after{
     background: #fff;
@@ -348,65 +323,13 @@ table.board td{
     width: 54px;
 }
 
-td.td1{background: #d4c8ae;}
-td.td2{background: #733e16;}
-
-.pawn1{
-    background: #fff;
-    border-radius: 100px;
-    height: 40px;
-    width: 40px;
-    position: relative;
-}
-.pawn1:before{
-    border: 2px solid #f33;
-    border-radius: 100px;
-    content: '';
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 3px; top: 3px;
-}
-.queen1:after{
-    background: #f33;
-    border-radius: 100px;
-    content: '';
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    left: 13px; top: 13px;
-}
-
-.pawn2{
-    background: #f33;
-    border-radius: 100px;
-    height: 40px;
-    width: 40px;
-    position: relative;
-}
-.pawn2:before{
-    border: 2px solid #fff;
-    border-radius: 100px;
-    content: '';
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    left: 3px; top: 3px;
-}
-.queen2:after{
-    background: #fff;
-    border-radius: 100px;
-    content: '';
-    height: 14px;
-    width: 14px;
-    position: absolute;
-    left: 13px; top: 13px;
-}
+td.td1{background: #fff;}
+td.td2{background: #78a2b7;}
 
 td.hover{background: #945c33;}
-td.checked{background: #a66d43;}
-td.possible{background: #84a3cc;}
-td.possible:hover{background: #a5bfe3;}
+td.checked{background: #479ecc;}
+td.possible{background: #7bcffc;}
+td.possible:hover{background: #8fb2c4;}
 
 .message{
     background: #000;
